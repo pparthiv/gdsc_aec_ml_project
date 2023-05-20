@@ -1,0 +1,7 @@
+{% extends 'classification.html' %}
+
+{% block result %}
+    <h1>Image Classification Results</h1>
+    <p>Predictions: {{ predictions }}</p>
+    <img src="{{ uploaded_image }}" alt="Uploaded Image">
+{% endblock %}

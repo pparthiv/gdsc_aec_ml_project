@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linear Regression</title>
+</head>
+<body>
+    <h1>Linear Regression</h1>
+    <form method="post" action="{% url 'linear_reg' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Calculate Linear Regression</button>
+    </form>
+    <div>
+        {% block linreg_result %}
+        {% endblock %}
+    </div>
+</body>
+</html>

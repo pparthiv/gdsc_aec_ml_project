@@ -1,0 +1,9 @@
+{% extends 'linreg.html' %}
+
+{% block linreg_result %}
+    <h1>Linear Regression Results</h1>
+    <p>Slope: {{ slope }}</p>
+    <p>Intercept: {{ intercept }}</p>
+    <p>Predicted Value: {{ prediction }}</p>
+    {{ graph|safe }}
+{% endblock %}
