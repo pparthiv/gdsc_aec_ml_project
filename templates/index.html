@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .links {
+            text-align: center;
+        }
+
+        .links a {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="{% url 'linear_reg' %}">Linear Regression</a>
+        <a href="{% url 'classify_image' %}">Image Classification</a>
+    </div>
+</body>
+</html>

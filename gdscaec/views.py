@@ -7,8 +7,9 @@ from .forms import LinearRegressionForm
 from django.shortcuts import render
 from django.core.files.storage import default_storage
 from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error
+
+def index(request):
+    return render(request, 'index.html')
 
 def classify_image(request):
     if request.method == 'POST' and request.FILES['image']:
