@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GDSC</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/shared.css' %}">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/shared.css">
     <script src="/js/script.js" defer></script>
 </head>
 <body>
     <nav class="main-nav">
         <div class="main-nav_actual-container">
             <div class="main-nav_gdsc">
-               <a href="{% url 'index' %}"><img src="{% static "images/Screenshot_2023-05-20_182351-removebg-preview.png" %}" alt="GDSC"></a>
+               <a href="/html/index.html"><img src="/images/Screenshot_2023-05-20_182351-removebg-preview.png" alt="GDSC"></a>
             </div>
         </div>
     </nav>
@@ -22,14 +21,14 @@
         <!-- <div class="main_in_diff_setting_tryout"> -->
         <div class="main-div_container">
             <div class="main-div_input">
-                <a href="{% url 'linear_reg' %}">
+                <a href="/html/linear_regression.html">
                     <div class="main-div_1 common-div">
                         <h1>LINEAR REGRESSION</h1>
                     </div>
                 </a>
-                <a href="{% url 'classify_image' %}">
+                <a href="/html/image_class.html">
                     <div class="main-div_2 common-div">
-                        <h1>IMAGE CLASSIFICATION</h1>
+                        <h1>IMAGE CLASS</h1>
                     </div>
                 </a>
             </div>

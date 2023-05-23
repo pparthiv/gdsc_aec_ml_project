@@ -1,18 +1,35 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Image Upload</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE CLASSIFICATION</title>
+    <link rel="stylesheet" href="{% static 'css/classification.css' % %}">
+    <link rel="stylesheet" href="{% static 'css/shared.css' %}">
 </head>
 <body>
-    <h1>Image Upload</h1>
-    <form method="post" enctype="multipart/form-data" action="{% url 'classify_image' %}">
-        {% csrf_token %}
-        <input type="file" name="image" accept="image/*">
-        <button type="submit">Upload and Classify</button>
-    </form>
-    <div>
-        {% block result %}
-        {% endblock %}
-    </div>
+    <nav class = "main-nav">
+        <div class="main-nav_actual-container">
+            <a href="{% url 'index' %}"><img src="{% static 'images/Screenshot_2023-05-20_182351-removebg-preview.png' %}" alt="GDSC"></a>
+        </div>
+    </nav>
+    <div class="main-div_container">
+        <div class="main-div-input">
+            <div class="main-div_1 common-div">
+                <h1>Image Upload</h1>
+                <form method="post" enctype="multipart/form-data" action="{% url 'classify_image' %}">
+                    {% csrf_token %}
+                    <input type="file" name="image" accept="image/*">
+                    <button type="submit">Upload and Classify</button>
+                </form>
+            </div>
+            <div class="main-div_2 common-div">
+                {% block result %}
+                {% endblock %}
+            </div>
+        </div>
+    </div> 
 </body>
 </html>
