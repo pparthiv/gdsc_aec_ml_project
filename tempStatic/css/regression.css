@@ -1,6 +1,18 @@
 
+
+
 main{
     height: 90vh;
+
+
+}
+
+p{
+    margin: 20px;
+}
+
+.main-div_container{
+    /* background-color: grey */
 }
 
 .main-div_input{
@@ -10,8 +22,8 @@ main{
 
 .common-div {
     /* padding:8.5rem; */
-    width: 400px;
-    height: 400px;
+    /* width: 400px;
+    height: 400px; */
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -29,18 +41,101 @@ main{
 }
 
 .main-div_1{
-background-color:rgb(38, 104, 104);
-width: 33vw;
+    /* background-color:rgb(43, 110, 60); */
+    background: linear-gradient(135deg,rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+
+
+    /* width: 33vw; */
+    display: grid;
+    grid-template-columns: 1fr 8rem;
+    grid-template-rows: repeat(12, 4rem);
+    /* grid-template-rows: 5rem 5rem 5rem 5rem; */
+    padding: 1rem;
 }
 .main-div_2{
-    background-color: rgb(255, 123, 0);
-    width: 33vw;
+    /* background-color: rgb(92, 131, 204); */
+    /* width: 50vw; */
 }
+
+
+.output-common{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.output-main{
+    background-color: rgb(128, 167, 212);
+    background: linear-gradient(135deg,rgba(128,167,212,1), rgba(247, 247, 247, 0.2));
+
+    color: rgb(0, 0, 0);
+    padding: 0.75rem;
+    border-radius: 8px;
+    /* grid-area: output; */
+    /* display: flex; */
+    justify-self: center;
+    align-self: center;
+
+    width: 50px;
+    height: 60px;
+}
+
+
+
+
 
 .main-div_2-image-container{
     width: 100%;
     /* max-width: 400px; */
     position: relative;
+    background: linear-gradient(135deg,rgba(255,255,255,0.35), rgba(255,255,255,0.12));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: solid rgba(255,255,255,0);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    padding: 2rem;
+}
+
+.calculate_regression{
+    grid-column: span 2;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.main-div_2-output{
+    /* background-color: rgb(14, 0, 0); */
+    /* background: white; */
+    background: linear-gradient(135deg,rgba(255,255,255,0.4), rgba(255,255,255,0));
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    border-radius: 20px;
+    border: solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+
+
+    padding: 2rem;
+    margin: 1rem;
+    height: 20rem;
+
+    display: grid;
+    grid-template-columns: 15rem 5rem ;
+    grid-template-rows: 2.5rem repeat(3, 4.5rem);
+}
+
+
+
+.output-title{
+    grid-column: span 2;
+    text-align: center;
+    color:lightsteelblue;
 }
 
 .main-image{
@@ -48,4 +143,34 @@ width: 33vw;
     height: 100%;
     object-fit: cover;
     /* background-size: cover; */
+}
+
+.slope{
+    /* grid-area: a; */
+    /* grid-column-start: 1; */
+    /* color: black; */
+}
+
+.output-slope{
+    /* grid-area: b; */
+}
+
+.intercept{
+    /* grid-area: c; */
+    /* color: black; */
+
+}
+
+.output-intercept{
+    /* grid-area: d; */
+}  
+
+.predicted_value{
+    /* color: lightblue; */
+max-width: 90px;
+    /* grid-area: e; */
+}
+
+.output-predicted{
+    /* grid-area: f; */
 }
