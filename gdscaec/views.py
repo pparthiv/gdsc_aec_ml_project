@@ -61,7 +61,6 @@ def linear_regression(request):
 
 def return_graph(ip, op, pred_op):
     fig = plt.figure()
-    plt.plot(ip,op)
     plt.scatter(ip, op, color='blue', label='Data Points')
     plt.plot(ip, pred_op, color='red', label='Linear Regression')
     plt.xlabel('X')
