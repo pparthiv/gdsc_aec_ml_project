@@ -1,0 +1,98 @@
+
+*{
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p{
+    font-size: larger;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+input{
+    outline: none;
+}
+
+body {
+    display: grid;
+    /* this 10 rem will remind me of that grid property */
+    /* grid-template-rows: 3.625rem auto; */
+    grid-template-rows: 5.8rem auto;
+    grid-template-areas: "nav" "main";
+    /* overflow: scroll; */
+    font-family: "Poppins", sans-serif;
+    /* background: black; */
+
+    /* background-color: #ffac81;
+    background-image :linear-gradient(315deg, #ffac81 0%, #ff928b 74%); */
+
+    background-color: #42378f;
+    background-image: linear-gradient(315deg, #422fc2 0%, #f0636c 74%);
+
+}
+
+.main-nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.main-nav_actual-container{
+    /* background-color: red; */
+    background-color: white;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* opacity: 0.1; */
+    border: solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main-nav_container{
+    display: flex;
+}
+
+.main-nav_item{
+    padding: 0 2rem 0;
+}
+
+.main-div_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
