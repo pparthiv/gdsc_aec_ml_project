@@ -53,7 +53,7 @@ def linear_regression(request):
             input_number = form.cleaned_data['input_number']
             prediction = model.predict([[input_number]])
 
-            return render(request, 'linreg_res.html', {'slope': slope, 'intercept': intercept, 'prediction': prediction[0], 'form': form, 'graph': return_graph(input_values, output_values, model.predict(X))})
+            return render(request, 'linreg_res.html', {'slope': float("{:.2f}".format(slope)), 'intercept': float("{:.2f}".format(intercept)), 'prediction': float("{:.2f}".format(prediction[0])), 'form': form, 'graph': return_graph(input_values, output_values, model.predict(X))})
     else:
         form = LinearRegressionForm()
 
