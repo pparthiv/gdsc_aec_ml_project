@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+}
+
 *{
     border: 0;
     box-sizing: border-box;
@@ -32,13 +36,13 @@ input{
 
 body {
     display: grid;
-    /* this 10 rem will remind me of that grid property */
-    /* grid-template-rows: 3.625rem auto; */
     grid-template-rows: 5.8rem auto;
     grid-template-areas: "nav" "main";
-    /* overflow: scroll; */
     font-family: "Poppins", sans-serif;
-    background: black;
+
+    background-color: #42378f;
+    background-image: linear-gradient(315deg, #422fc2 0%, #f0636c 74%);
+
 }
 
 .main-nav{
@@ -55,7 +59,8 @@ main{
 }
 
 .main-nav_actual-container{
-    background-color: rgb(255, 255, 255);
+    /* background-color: red; */
+    background-color: white;
     color: white;
     padding: 20px;
     position: fixed;
@@ -63,7 +68,9 @@ main{
     left: 0;
     width: 100%;
     /* opacity: 0.1; */
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border: solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+
 
     display: flex;
     align-items: center;
