@@ -21,7 +21,7 @@
                 <h1>Image Upload</h1>
                 <form method="post" enctype="multipart/form-data" action="{% url 'classify_image' %}">
                     {% csrf_token %}
-                    <input type="file" name="image" accept="image/*">
+                    <input type="file" class="upload" name="image" accept="image/*">
                     <button type="submit">Upload and Classify</button>
                 </form>
             </div>

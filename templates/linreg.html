@@ -23,19 +23,18 @@
         <div class="main-div_container">
             <div class="main-div_input">
                 <div class="main-div_1 common-div">
-                    <form method="post" action="{% url 'linear_reg' %}">
-                    <h1>Linear Regression Input</h1>
+                    <h2 class="output-title">Linear Regression Input</h2>
+                    <form method="post" action="{% url 'linear_reg' %}"  class="main-div_1-form">                        
                         {% csrf_token %}
-                        {{ form.as_p }}
-                        <button type="submit">Calculate Linear Regression</button>
+                        {% for f in form %}
+                            <p>{{ f.label }}</p>
+                            {{ f }}
+                        {% endfor %}
+                        <button type="submit" class="calculate_regression">Calculate Linear Regression</button>
                     </form>
-                </div>
-                <div class="main-div_2 common-div">
-                    <div class="main-div_2-image-container">
-                        {% block linreg_result %}
-                        {% endblock %}
-                    </div>
-                </div>
+                </div>                
+                {% block linreg_result %}
+                {% endblock %}          
             </div>
         </div>
     </main> 

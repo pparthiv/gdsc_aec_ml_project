@@ -2,6 +2,8 @@
 
 {% block result %}
     <h1>Image Classification Results</h1>
-    <p>Predictions: {{ predictions }}</p>
-    <img src="{{ uploaded_image }}" alt="Uploaded Image">
+    <p class="prediction">Predictions: {{ predictions }}</p>
+    <div class="img-container">
+        <img class="class-img" src="{{ uploaded_image }}" alt="Uploaded Image">
+    </div>
 {% endblock %}

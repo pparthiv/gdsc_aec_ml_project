@@ -1,9 +1,25 @@
 {% extends 'linreg.html' %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/regression.css' %}">
 
 {% block linreg_result %}
-    <h1>Linear Regression Results</h1>
-    <p>Slope: {{ slope }}</p>
-    <p>Intercept: {{ intercept }}</p>
-    <p>Predicted Value: {{ prediction }}</p>
-    {{ graph|safe }}
+<div class="main-div_2 common-div">
+    <div class="main-div_2-output">
+        <h2 class="output-title">
+            Linear Regression Output
+        </h2>
+        <P class="slope">Slope:</P>
+        <p class="output-main output-slope">{{ slope }}</p>
+        <P class="intercept">Intercept:</P>
+        <p class="output-main output-intercept">{{ intercept }}</p>
+        <P class="predicted_value">Predicted value:</P>
+        <p class="output-main output-predicted">{{ prediction }}</p>
+    </div>
+    <div class="main-div_2-image-container">
+        <div class="main-image">
+            {{ graph|safe }}
+        </div>
+    </div>
+</div>    
 {% endblock %}
