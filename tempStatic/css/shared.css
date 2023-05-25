@@ -51,7 +51,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 90.6vh;
     overflow: hidden;
 }
 
@@ -78,6 +78,15 @@ main{
 
 .main-nav_item{
     padding: 0 2rem 0;
+}
+
+.main-nav_aec-container{
+    width: 50px;
+    position: relative;
+}
+
+.main-nav_aec-logo{
+    width: 100%;
 }
 
 .main-div_container{
