@@ -59,7 +59,6 @@ main{
 }
 
 .main-nav_actual-container{
-    /* background-color: red; */
     background-color: white;
     color: white;
     padding: 20px;
@@ -67,7 +66,6 @@ main{
     top: 0;
     left: 0;
     width: 100%;
-    /* opacity: 0.1; */
     border: solid rgba(255,255,255,0.18);
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
 
@@ -82,6 +80,14 @@ main{
     display: flex;
 }
 
+.main-nav_aec-container{
+    width: 80px;
+    position: relative;
+}
+
+.main-nav_aec-logo{
+    width: 100%;
+}
 .main-nav_item{
     padding: 0 2rem 0;
 }
