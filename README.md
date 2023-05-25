@@ -20,5 +20,5 @@ A fullstack project made by using Django, Tensorflow, and Scikit-learn.
 Contact these people for any particular queries  
 1. Machine Learning and Django - [Parthiv Purkayastha](https://github.com/pparthiv)
 2. Frontend - [Tirthankar Nath](https://github.com/Tirthankar03)
-3. Frontend - [Parijat Bhattarcharya](https://github.com/POBOROJO)
+3. Frontend - [Parijat Bhattarcharjee](https://github.com/POBOROJO)
 4. Django - [Abinash Kalita](https://github.com/Ob1nash)
